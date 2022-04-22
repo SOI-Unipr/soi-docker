@@ -23,6 +23,12 @@ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
     ProxyPass     /api/        http://172.17.0.99:8000/
 </VirtualHost>
 ```
+enable proxy modules
+
+```
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
+```
 ## add this line to DOCKER file
 ```
 COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf

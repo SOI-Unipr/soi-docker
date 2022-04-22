@@ -2,9 +2,9 @@
 Docker files for SOI class exercises.
 
 ### generic commands
-build an image with tag
+build an image with tag --rm means "Remove intermediate containers after a successful build"
 ```
-docker build -t apache2 .
+docker build --rm -t apache2 .
 ```
 
 see all images
@@ -32,8 +32,11 @@ docker exec -it devtest bash
 
 create container with a volume (the volume can be shared between containers)
 ```
-docker run -d --name devtest --mount source=myvol,target=/app nginx:latest
+docker create --name devtest --mount source=myvol,target=/app nginx:latest
 ```
+
+the command `docker run` is the same of `docker create` + `docker start` adding an optional command
+
 
 create a network
 ```
@@ -49,8 +52,11 @@ exec a command
 docker container exec -it mycontainer sh
 ```
 
+run docker compose
+```
+docker-compose up
+```
 
 
-### 
 
-See the README file on frontend and backend directories for details on single container.
+### See the README file on frontend and backend directories for details on single container.
