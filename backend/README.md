@@ -1,3 +1,10 @@
+## create a .env file
+```
+OIDC_CLIENT_ID="xxxxx.apps.googleusercontent.com"
+OIDC_SECRET="GOCSPX-xxxxxxx"
+OIDC_REDIRECT="http://soi-labdocker.unipr.it:8080"
+```
+
 ## build the apache image
 ```
 docker build -t node .
