@@ -1,5 +1,6 @@
 FROM node:12-alpine
 COPY ./todo-server/ .
+COPY ./.env .
 RUN npm install 
-CMD ["node", "src/server.js"]
+CMD ["npm", "start"] 
 EXPOSE 8000
