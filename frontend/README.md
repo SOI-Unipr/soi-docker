@@ -35,7 +35,7 @@ COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 ```
 ## add this line to /etc/hosts file (using sudo)
 ```
-127.0.0.1       soi-labdocker www.soi-labdocker
+127.0.0.1       soi-labdocker.unipr.it www.soi-labdocker.unipr.it
 ```
 ## run the image using network
 ```
