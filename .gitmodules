@@ -1,6 +1,8 @@
 [submodule "backend/todo-server"]
  	path = backend/todo-server
  	url = https://github.com/SOI-Unipr/todo-server
+	branch = master
 [submodule "frontend/todo-app"]
 	path = frontend/todo-app
 	url = https://github.com/SOI-Unipr/todo-app
+	branch = master
