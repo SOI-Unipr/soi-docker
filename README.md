@@ -1,6 +1,11 @@
 # soi-docker
 Docker files for SOI class exercises.
 
+To fetch the code use the following command:
+```
+git clone git@github.com:SOI-Unipr/soi-docker.git --recurse-submodules
+```
+
 ### generic commands
 build an image with tag --rm means "Remove intermediate containers after a successful build"
 ```
