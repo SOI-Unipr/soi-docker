@@ -51,7 +51,7 @@ docker network create mynetwork --subnet=10.10.0.0/16
 inspect the network bridge
 ```
 docker network inspect mynetwork
-
+```
 exec a command
 ```
 docker container exec -it mycontainer sh
@@ -64,4 +64,4 @@ docker-compose up
 
 
 
-### See the README file on frontend and backend directories for details on single container.
+***See the README file on frontend and backend directories for details on single container.***
