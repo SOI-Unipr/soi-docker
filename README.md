@@ -21,19 +21,19 @@ inspect an image
 ```
 docker inspect 9c1b6dd6c1e6be9fdd2b1987783824670d3b0dd7ae8ad6f57dc3cea5739ac71e
 ```
-
+launch a container: -d *detached* -it *Allocate a pseudo-tty and Keep STDIN open even if not attached*
+```
+docker run -dit --name todo-app -p 8080:80 apache2
+```
+run a command in a running container
+```
+docker exec -it devtest bash
+```
 attach to a container started with -it flag
 ```
 docker attach todo-server 
 ```
 then CTRL-p CTRL-q key sequence to exit
-
-launch a container: -d detached -it Allocate a pseudo-tty and Keep STDIN open even if not attached
-```
-docker run -dit --name todo-app -p 8080:80 apache2
-```
-
-docker exec -it devtest bash
 
 create container with a volume (the volume can be shared between containers)
 ```
