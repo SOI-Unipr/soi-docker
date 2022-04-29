@@ -62,6 +62,10 @@ run docker compose
 docker-compose up
 ```
 
+stop docker compose
+```
+docker-compose down
+```
 
 
 ***See the README file on frontend and backend directories for details on single container.***
