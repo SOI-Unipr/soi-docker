@@ -1,12 +1,16 @@
 ## build the apache image
 ```
-docker build -t apache2 .
+docker build -t apache2:latest .
 ```
 ## run the image - app can be reached out using http://localhost:8080/
 ```
 docker run -dit --name todo-app -p 8080:80 apache2
 ```
-## customize apache configuration file
+## get the ip of the server using check the connectivity
+```
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' todo-server
+```
+## customize apache configuration file with virtual hosting
 ```
 docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```

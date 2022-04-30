@@ -8,12 +8,12 @@ OIDC_REDIRECT="http://soi-labdocker.unipr.it:8080"
 
 ## build the apache image
 ```
-docker build -t node .
+docker build -t node:alpha .
 ```
 
 ## run the image - app can be reached out using http://localhost:8080/
 ```
-docker run --name todo-server -dit -p 8000:8000 node
+docker run --name todo-server -dit -p 8000:8000 node:alpha
 ```
 
 ## create the newtork
