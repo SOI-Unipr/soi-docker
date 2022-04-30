@@ -13,7 +13,7 @@ docker build -t node .
 
 ## run the image - app can be reached out using http://localhost:8080/
 ```
-docker run --name todo-server -dit -p 8000:8000 node /bin/ash 
+docker run --name todo-server -dit -p 8000:8000 node
 ```
 
 ## create the newtork
