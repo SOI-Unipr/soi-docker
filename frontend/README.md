@@ -6,9 +6,9 @@ docker build -t apache2 .
 ```
 docker run -dit --name todo-app -p 8080:80 apache2
 ```
-### How to properly configure the virtual hosting?
+## How to properly configure the virtual hosting?
 
-## 1. customize apache configuration file
+### 1. customize apache configuration file
 ```
 docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 ```
@@ -31,16 +31,16 @@ enable proxy modules
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_http_module modules/mod_proxy_http.so
 ```
-## 2. add this line to DOCKER file
+### 2. add this line to DOCKER file
 ```
 COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 ```
-## 3. add this line to /etc/hosts file (using sudo)
+### 3. add this line to /etc/hosts file (using sudo)
 ```
 127.0.0.1       soi-labdocker.unipr.it www.soi-labdocker.unipr.it
 
 ```
-## 4. create network 
+### 4. create network 
 ```
 docker network create todo-app-network --subnet=10.88.0.0/16
 ```
