@@ -38,6 +38,7 @@ then CTRL-p CTRL-q key sequence to exit
 create container with a volume (the volume can be shared between containers)
 ```
 docker create --name devtest --mount source=myvol,target=/app nginx:latest
+docker container run --name apache_with_vol -it -d --mount source=myvolume,target=/apache/logs httpd:latest /bin/bash
 ```
 
 the command `docker run` is the same of `docker create` + `docker start` adding an optional command
