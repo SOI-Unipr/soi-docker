@@ -49,6 +49,7 @@ docker run -dit --name todo-app -p 8080:80 --network todo-app-network apache2
 ## if you want to install telnet or wget
 ```
 apt-get update
+apt-get install procps
 apt-get install telnet
 apt-get install wget
 ```
