@@ -1,9 +1,10 @@
 # soi-docker
 Docker files for SOI class exercises.
 
-To fetch the code use the following command:
+To fetch the code use on of the following command:
 ```
 git clone git@github.com:SOI-Unipr/soi-docker.git --recurse-submodules
+git clone https://github.com/SOI-Unipr/soi-docker --recurse-submodules
 ```
 
 ### generic commands
