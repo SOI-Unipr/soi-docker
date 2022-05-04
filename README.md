@@ -1,11 +1,12 @@
 # soi-docker
 Docker files for SOI class exercises.
 
-To fetch the code use on of the following command:
+To fetch the code use one of the following command:
 ```
 git clone git@github.com:SOI-Unipr/soi-docker.git --recurse-submodules
 git clone https://github.com/SOI-Unipr/soi-docker --recurse-submodules
 ```
+in first case you must setup the SSH key on your GitHub account following this https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
 ### generic commands
 build an image with tag --rm means "Remove intermediate containers after a successful build"
