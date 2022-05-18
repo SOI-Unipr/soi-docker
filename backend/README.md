@@ -6,9 +6,10 @@ OIDC_SECRET="GOCSPX-xxxxxxx"
 OIDC_REDIRECT="http://soi-labdocker.unipr.it:8080"
 ```
 Here a valid example
+```
 OIDC_CLIENT_ID="219491940200-f9faq1l3khpailo5jd7sb9f58s16b6r0.apps.googleusercontent.com"
 OIDC_SECRET="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"
-
+```
 ## build the apache image
 ```
 docker build -t node .
