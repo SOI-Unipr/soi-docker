@@ -11,7 +11,7 @@ OIDC_REDIRECT="http://soi-labdocker.unipr.it:8080"
 docker build -t node:alpha .
 ```
 
-## run the image - app can be reached out using http://localhost:8080/
+## run the image. Server can be reached out using http://localhost:8000 (e.g. trying wget http://localhost:8000/tasks)
 ```
 docker run --name todo-server -dit -p 8000:8000 node:alpha
 ```
