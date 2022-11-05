@@ -17,7 +17,7 @@ docker build -t node .
 
 ## run the image. Server can be reached out using http://localhost:8000 (e.g. trying wget http://localhost:8000/tasks)
 ```
-docker run --name todo-server -dit -p 8000:8000 node /bin/ash 
+docker run --name todo-server -dit -p 8000:8000 node:alpha 
 ```
 
 ## create the newtork
