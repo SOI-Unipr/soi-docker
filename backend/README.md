@@ -1,5 +1,5 @@
 ## update the Google OAuth credentials and Consent Screen (see lab slides) 
-## create a .env file with this values
+## create a .env file with these values
 ```
 OIDC_CLIENT_ID="xxxxx.apps.googleusercontent.com"
 OIDC_SECRET="GOCSPX-xxxxxxx"
