@@ -17,7 +17,7 @@ docker build -t node .
 
 ## run the image. Server can be reached out using http://localhost:8000 (e.g. trying wget http://localhost:8000/tasks)
 ```
-docker run --name todo-server -dit -p 8000:8000 node:alpha 
+docker run --name todo-server -dit -p 8000:8000 node 
 ```
 
 ## create the network
@@ -27,5 +27,5 @@ docker network create todo-app-network --subnet=10.88.0.0/16
 
 ## run the image using network and ip
 ```
-docker run --name todo-server -dit -p 8000:8000 --network todo-app-network --ip 10.88.0.11 node:alpha 
+docker run --name todo-server -dit -p 8000:8000 --network todo-app-network --ip 10.88.0.11 node 
 ```
