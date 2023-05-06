@@ -16,7 +16,7 @@ docker build -t node:alpha .
 docker run --name todo-server -dit -p 8000:8000 node:alpha
 ```
 
-## create the newtork
+## create the network
 ```
 docker network create todo-app-network --subnet=10.88.0.0/16
 ```
