@@ -6,7 +6,7 @@ OIDC_SECRET="GOCSPX-xxxxxxx"
 OIDC_REDIRECT="http://soi-labdocker.unipr.it:8080"
 ```
 
-## build the apache image
+## build the backend image
 ```
 docker build -t node:alpha .
 ```
