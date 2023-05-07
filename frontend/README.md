@@ -45,7 +45,11 @@ docker run -dit --name todo-app -p 8080:80 apache2
 
 ```
 
-## 4. Try to open a shell on the container (docker container exec -it CONTAINER sh), check the files system on it and the process running, check the connection to backend 
+## 4. Try to open a shell on the container 
+```
+docker container exec -it CONTAINER sh 
+```
+check the files system on it and the process running, check the connection to backend 
 
 ## 5. open a new browser *incognito* window at http://soi-labdocker.unipr.it:8080/
 
