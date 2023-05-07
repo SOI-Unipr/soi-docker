@@ -36,7 +36,8 @@ check the IP assigend to the container
 ```
 docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' todo-server
 ```
-## 6. check with curl the API response http://localhost:8000/tasks (you should receive `{"error":"unauthorized"}`)
+## 6. check with curl the API response http://localhost:8000/tasks 
+(you should receive `{"error":"unauthorized"}`)
 
 ## 7. Inspect one or more image
 
