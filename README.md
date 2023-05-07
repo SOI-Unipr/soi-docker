@@ -8,6 +8,8 @@ git clone https://github.com/SOI-Unipr/soi-docker --recurse-submodules
 ```
 in first case you must setup the SSH key on your GitHub account following this https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
+start with *backend* and then *frontend* container, at the end use docker compose approach to build all 
+
 ### generic commands
 build an image with tag --rm means "Remove intermediate containers after a successful build"
 ```
