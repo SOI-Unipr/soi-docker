@@ -37,7 +37,7 @@ docker build -t apache2 .
 ## 2. run the container 
 app can be reached out using http://localhost:8080/
 ```
-docker run -dit --name todo-app -p 8080:80 apache2
+docker run -dit --name todo-app -p 8080:80 --network todo-app-network apache2
 ```
 ## 3. add this line to /etc/hosts file (using sudo)
 ```
