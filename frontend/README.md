@@ -8,11 +8,6 @@ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > my-httpd.conf
 <VirtualHost *:80>
     ServerName soi-labdocker.unipr.it
     ServerAlias www.soi-labdocker.unipr.it soi-labdocker.unipr.it
-    ServerAdmin webmaster@localhost
-    DocumentRoot /var/www
-    LogLevel info
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
 
     ProxyPass     /api/        http://10.88.0.11:8000/
 </VirtualHost>
